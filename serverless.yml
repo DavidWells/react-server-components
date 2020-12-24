@@ -1,5 +1,4 @@
 
-
 service: serverless-react-components
 
 provider:
@@ -21,7 +20,7 @@ provider:
 
 # Lambda functions
 functions:
-  hello:
+  server:
     handler: handler.app
     events:
       - http: ANY /rsc

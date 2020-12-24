@@ -14,7 +14,7 @@ async function doThing() {
     }
     const name = tableName || MY_TABLE
     // Your async code here
-    return dynamoDB.describeTable({ TableName: name }).promise().then((x) => {
+    return dynamoDB.describeTable({ TableName: MY_TABLE }).promise().then((x) => {
       return x
     })
   }

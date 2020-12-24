@@ -1,16 +1,21 @@
 const AWS = require('aws-sdk')
 const forceSync = require('sync-rpc')
-const syncFunction = forceSync(require.resolve('./_get-dynamo-data'))
+const syncGetDataFromDb = forceSync(require.resolve('./_get-dynamo-data'))
 const { MY_TABLE } = process.env
+
 export default function App() {
-  const data = syncFunction(MY_TABLE)
+  const data = syncGetDataFromDb(MY_TABLE)
   console.log('data', data)
   return (
     <div className="main">
-      Hello from App.server.js
-      <pre>
-      {JSON.stringify(data, null, 2)}
-      </pre>
+      <h1>React Server Components Rendering from AWS Lambda</h1>
+      <div>
+        <h3>Data streamed from server</h3>
+        <p>Check network tab</p>
+        <pre>
+        {JSON.stringify(data, null, 2)}
+        </pre>
+      </div>
       {/* <Temp /> */}
     </div>
   );
