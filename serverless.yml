@@ -1,22 +1,45 @@
 
 
-service: tester
+service: serverless-react-components
 
 provider:
   name: aws
   runtime: nodejs12.x
+  # environment vars
   environment:
     NODE_OPTIONS: --conditions react-server
     NODE_ENV: production
+    MY_TABLE: { Ref: myDynamoTable }
+  # Permissions for functions
   iamRoleStatements:
     - Effect: Allow
       Action:
+        - dynamodb:DescribeTable
         - dynamodb:PutItem
         - dynamodb:Scan
-      Resource: 'arn:aws:dynamodb:us-east-1:919731871945:table/todo-api-dev-todo-table'
+      Resource: { Fn::GetAtt: [ myDynamoTable, Arn ] }
+
+# Lambda functions
 functions:
   hello:
     handler: handler.app
     events:
       - http: ANY /rsc
       - http: 'ANY /rsc/{proxy+}'
+
+# DynamoDB table
+resources:
+  Resources:
+    myDynamoTable:
+      Type: 'AWS::DynamoDB::Table'
+      Properties:
+        TableName: 'my-table-name-xyz'
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1

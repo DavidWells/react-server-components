@@ -1,12 +1,20 @@
 const AWS = require('aws-sdk')
+const { MY_TABLE } = process.env
 const dynamoDB = new AWS.DynamoDB({
   region: 'us-east-1'
 })
 
 async function doThing() {
-  return (paramOne, paramTwo) => {
+  return (tableName, paramTwo) => {
+    if (!MY_TABLE) {
+      return [{ info: 'MY_TABLE undefined '}]
+    }
+    if (!tableName) {
+      return [{ info: 'tableName undefined '}]
+    }
+    const name = tableName || MY_TABLE
     // Your async code here
-    return dynamoDB.scan({ TableName: 'todo-api-dev-todo-table' }).promise().then((x) => {
+    return dynamoDB.describeTable({ TableName: name }).promise().then((x) => {
       return x
     })
   }

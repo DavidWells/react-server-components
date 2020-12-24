@@ -35148,7 +35148,7 @@ function useLocation() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Root; });
-/* harmony import */ var _Users_davidwells_David_repos_domain_parser_backend_service_tester_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_davidwells_David_scratch_react_server_comps_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -35159,7 +35159,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LocationContext_client__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LocationContext.client */ "./reactApp/LocationContext.client.js");
 
 
-var _jsxFileName = "/Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/Root.client.js";
+var _jsxFileName = "/Users/davidwells/David/scratch/react-server-comps/reactApp/Root.client.js";
 
 
 
@@ -35193,7 +35193,7 @@ function Content() {
     isEditing: false,
     searchText: ''
   }),
-      _useState2 = Object(_Users_davidwells_David_repos_domain_parser_backend_service_tester_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      _useState2 = Object(_Users_davidwells_David_scratch_react_server_comps_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
       location = _useState2[0],
       setLocation = _useState2[1];
 
@@ -35251,7 +35251,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Root_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Root.client */ "./reactApp/Root.client.js");
 
-var _jsxFileName = "/Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/index.client.js";
+var _jsxFileName = "/Users/davidwells/David/scratch/react-server-comps/reactApp/index.client.js";
 
 
 var initialCache = new Map();
@@ -35273,7 +35273,7 @@ root.render( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/index.client.js */"./reactApp/index.client.js");
+module.exports = __webpack_require__(/*! /Users/davidwells/David/scratch/react-server-comps/reactApp/index.client.js */"./reactApp/index.client.js");
 
 
 /***/ })
