@@ -27,9 +27,17 @@ npm run build
 ## Deployment
 
 ```
-npm deploy
+serverless deploy
 ```
+
+## See it in action
+
+```
+serverless info
+```
+
+Visit your live URL `https://xxxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/rsc/`
 
 ## Todo
 
-- [ ] Make a rest dynamoDB adapter. [example postGres](https://github.com/facebook/react/tree/master/packages/react-pg)
+- [ ] Make a real dynamoDB adapter. [Example postGres](https://github.com/facebook/react/tree/master/packages/react-pg)
