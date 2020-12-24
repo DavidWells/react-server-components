@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 
 export default function Temp() {
   const [count, setCount] = React.useState(0);

@@ -1,7 +1,8 @@
 
-import { createContext, useContext } from 'react';
+import { createContext, useContext } from 'react'
 
-export const LocationContext = createContext();
+export const LocationContext = createContext()
+
 export function useLocation() {
-  return useContext(LocationContext);
+  return useContext(LocationContext)
 }

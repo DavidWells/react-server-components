@@ -1,10 +1,9 @@
 const AWS = require('aws-sdk')
 const forceSync = require('sync-rpc')
 const syncGetDataFromDb = forceSync(require.resolve('./_get-dynamo-data'))
-const { MY_TABLE } = process.env
 
 export default function App() {
-  const data = syncGetDataFromDb(MY_TABLE)
+  const data = syncGetDataFromDb(process.env.MY_TABLE)
   console.log('data', data)
   return (
     <div className="main">
@@ -18,5 +17,5 @@ export default function App() {
       </div>
       {/* <Temp /> */}
     </div>
-  );
+  )
 }

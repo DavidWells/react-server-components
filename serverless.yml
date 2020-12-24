@@ -9,6 +9,7 @@ provider:
     NODE_OPTIONS: --conditions react-server
     NODE_ENV: production
     MY_TABLE: { Ref: myDynamoTable }
+    BABEL_CACHE_PATH: /tmp/babel-cache.json
   # Permissions for functions
   iamRoleStatements:
     - Effect: Allow
