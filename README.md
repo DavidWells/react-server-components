@@ -1,6 +1,6 @@
 # React Server Components rendering in AWS Lambda
 
-Example of React server components running in AWS lambda.
+Example of [react server components](https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html) running in AWS lambda.
 
 Fork of https://github.com/sw-yx/amplify-react-serverless-components/.
 
