@@ -1,0 +1,22 @@
+
+
+service: tester
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  environment:
+    NODE_OPTIONS: --conditions react-server
+    NODE_ENV: production
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - dynamodb:Scan
+      Resource: 'arn:aws:dynamodb:us-east-1:919731871945:table/todo-api-dev-todo-table'
+functions:
+  hello:
+    handler: handler.app
+    events:
+      - http: ANY /rsc
+      - http: 'ANY /rsc/{proxy+}'

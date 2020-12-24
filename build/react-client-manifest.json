@@ -1,0 +1,124 @@
+{
+  "file:///Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/Cache.client.js": {
+    "": {
+      "id": "./reactApp/Cache.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": ""
+    },
+    "*": {
+      "id": "./reactApp/Cache.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "*"
+    },
+    "useRefresh": {
+      "id": "./reactApp/Cache.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "useRefresh"
+    },
+    "useServerResponse": {
+      "id": "./reactApp/Cache.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "useServerResponse"
+    }
+  },
+  "file:///Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/LocationContext.client.js": {
+    "": {
+      "id": "./reactApp/LocationContext.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": ""
+    },
+    "*": {
+      "id": "./reactApp/LocationContext.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "*"
+    },
+    "LocationContext": {
+      "id": "./reactApp/LocationContext.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "LocationContext"
+    },
+    "useLocation": {
+      "id": "./reactApp/LocationContext.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "useLocation"
+    }
+  },
+  "file:///Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/Root.client.js": {
+    "": {
+      "id": "./reactApp/Root.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": ""
+    },
+    "*": {
+      "id": "./reactApp/Root.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "*"
+    },
+    "default": {
+      "id": "./reactApp/Root.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "default"
+    }
+  },
+  "file:///Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/index.client.js": {
+    "": {
+      "id": "./reactApp/index.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": ""
+    },
+    "*": {
+      "id": "./reactApp/index.client.js",
+      "chunks": [
+        "main"
+      ],
+      "name": "*"
+    }
+  },
+  "file:///Users/davidwells/David/repos/domain-parser/backend-service/tester/reactApp/Temp.client.js": {
+    "": {
+      "id": "./reactApp/Temp.client.js",
+      "chunks": [
+        "client3"
+      ],
+      "name": ""
+    },
+    "*": {
+      "id": "./reactApp/Temp.client.js",
+      "chunks": [
+        "client3"
+      ],
+      "name": "*"
+    },
+    "default": {
+      "id": "./reactApp/Temp.client.js",
+      "chunks": [
+        "client3"
+      ],
+      "name": "default"
+    }
+  }
+}
