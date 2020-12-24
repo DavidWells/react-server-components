@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=development node ./scripts/build.js"
+    "build": "NODE_ENV=development node ./scripts/build.js",
+    "deploy": "npm run build && serverless deploy function -f server"
   },
   "author": "",
   "license": "ISC",
